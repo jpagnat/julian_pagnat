@@ -1,0 +1,42 @@
+@import "index";
+@import "footer";
+@import "contacto";
+@import "cubo";
+@import "sobremi";
+@import "portfolio";
+@import "responsive";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    transition: all .1s ease-in-out;
+}
+
+body {
+    background-color: #343A40;
+}
+
+a {
+    text-decoration: none;
+}
+
+.redesSociales {
+    margin-right: 20px;
+
+    a {
+        margin: 5px;
+        color: #f0cf4e;
+        font-size: 25px;
+    }
+
+    a:hover {
+        color: #70694e;
+    }
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}

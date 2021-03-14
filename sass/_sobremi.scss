@@ -1,0 +1,66 @@
+.presentacion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f0cf4e;
+
+    .presentacion_texto {
+        width: 80vh;
+        margin-top: 50px;
+        margin-right: 50px;
+        margin-left: 50px;
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            word-spacing: 10px;
+        }
+        #ultimo_parrafo {
+            padding-bottom: 20px;
+            border-bottom: 1px solid #343A40;
+        }
+    }
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #f0cf4e;
+    h2 {
+        letter-spacing: 2px;
+        width: 100%;
+        text-align: center;
+        color: #343A40;
+    }
+    .skills_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 50px 20px 50px;
+    }
+
+    i {
+        color: #343A40;
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+
+    i:hover {
+        color: #ffff;
+    }
+
+    p {
+        color: #343A40;
+    }
+}
+
+.futuro {
+    width: 100%;
+    height: 400px;
+    background-color: #ffff;
+}

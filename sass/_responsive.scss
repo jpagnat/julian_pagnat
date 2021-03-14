@@ -1,0 +1,69 @@
+@media only screen and (max-width:991px) {
+    .redesSociales {
+        display: none;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+    .contacto {
+        grid-template-areas: 
+        "parrafo parrafo parrafo"
+        "medios medios medios"
+        "medios medios medios"
+        "form form form";
+        grid-template-columns: repeat(3, 1fr);
+        .contacto_medios {
+            flex-direction: row;
+            flex-wrap: wrap;
+            border-right: none;
+            border-bottom: 1px solid #343A40;
+            .contacto_medios_item {
+                margin: 0 20px 0 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:500px) {
+    footer {
+        height: auto;
+    }
+
+    .footer_redes {
+        flex-direction: row;
+    }
+
+    .footer_derechos {
+        margin-top: 15px;
+    }
+    .btn_mobile {
+        display: block;
+    }
+    .btn_xl {
+        display: none;
+    }
+    .presentacion_cubo {
+        width: 200px;
+        height: 200px;
+        .box_img {
+            div {
+                width: 200px;
+                height: 200px;
+                line-height: 200px;
+            }
+        }
+    }
+    .skills {
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (max-width:300px) {
+    .portada_titulo {
+        left: 50px;
+    }
+    .presentacion_cubo {
+        display: none;
+    }
+}

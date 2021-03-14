@@ -1,0 +1,36 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 150px;
+    background-color: #343A40;
+    .footer_derechos {
+        width: 100%;
+        text-align: center;
+        p {
+            color: #ffff;
+        }
+    }
+    .footer_redes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 30px;
+        padding-top: 20px;
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #f0cf4e;
+        }
+        a:hover {
+            color: #4e4a39;
+        }
+    }
+    .footer_logo {
+        padding-left: 20px;
+    }
+}
