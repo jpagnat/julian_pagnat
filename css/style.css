@@ -284,10 +284,15 @@ footer {
         .portfolio .portfolio_proyecto .card .card-body a {
           background-color: #f0cf4e;
           color: #343A40;
-          border-color: #343A40; }
+          border-color: #343A40;
+          padding: 5px;
+          border-radius: 5px;
+          text-decoration: none; }
         .portfolio .portfolio_proyecto .card .card-body a:hover {
           background-color: #343A40;
-          color: #f0cf4e; }
+          color: #f0cf4e;
+          border-radius: 5px;
+          border-color: #f0cf4e; }
 
 @media only screen and (max-width: 991px) {
   .redesSociales {
