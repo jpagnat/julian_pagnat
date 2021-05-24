@@ -139,6 +139,17 @@ footer {
         background-color: #f0cf4e;
         color: #343A40; }
 
+.campo-obligatorio {
+  display: none;
+  padding: 1px;
+  color: #f10000; }
+
+textarea {
+  resize: none; }
+
+#respuesta {
+  display: none; }
+
 .presentacion_cubo {
   width: 300px;
   height: 300px;

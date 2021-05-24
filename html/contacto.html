@@ -95,31 +95,26 @@
                 <p>@julipagnat</p>
             </div>
         </div>
-        <div class="contacto_form">
-            <div class="mb-3">
-                <label for="formGroupExampleInput" class="form-label">Nombre:</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingresá tu nombre...">
-            </div>
-            <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label">Correo Electronico:</label>
-                <input type="email" class="form-control" id="formGroupExampleInput2"
-                    placeholder="Ingresa tu correo electronico...">
-            </div>
-            <div class="form_selector">
-                <select class="form-select" aria-label="Motivo">
-                    <option selected>Motivo de tu consulta</option>
-                    <option value="1">Trabajo</option>
-                    <option value="2">Sugerencia</option>
-                    <option value="3">Otro</option>
-                </select>
-            </div>
-            <label for="floatingTextarea2">Escribe aquí tu mensaje:</label>
-            <textarea class="form-control" placeholder="..." id="floatingTextarea2" style="height: 100px"></textarea>
-            <div class="form_boton">
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </div>
-        </div>
 
+
+        <form class="contacto_form" action="https://formspree.io/f/xjvjwbln" method="POST" name="contacto" id="contacto">
+            <div class="mb-3">
+                <label for="nombre-formulario" class="form-label">Nombre:</label>
+                <input type="text" id="nombre-formulario" name="nombre_formulario" class="form-control" placeholder="Ingresá tu nombre..." required>
+            </div>
+            <div class="mb-3">
+                <label for="email-formulario" class="form-label">Correo Electronico:</label>
+                <input type="email" name="email-formulario" class="form-control" id="email-formulario"
+                    placeholder="Ingresa tu correo electronico..." required>
+            </div>
+            <label for="mensaje-formulario">Escribe aquí tu mensaje:</label>
+            <textarea name="mensaje-formulario" id="mensaje-formulario" class="form-control" placeholder="..." id=""
+                style="height: 100px" required></textarea>
+            <div class="form_boton">
+                <button type="submit" id="btnEnviar" class="btn btn-primary">Enviar</button>
+            </div>
+            <div id="respuesta"></div>
+        </form>
     </section>
 
 
@@ -146,9 +141,7 @@
 
 
     <!--Scripts-->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
@@ -160,6 +153,7 @@
     <script>
         new WOW().init();
     </script>
+    <script src="../js/form.js"></script>
 
 </body>
 

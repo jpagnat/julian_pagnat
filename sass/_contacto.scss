@@ -68,3 +68,17 @@
         }
     }
 }
+
+.campo-obligatorio {
+    display: none;
+    padding: 1px;
+    color: rgb(241, 0, 0);
+}
+
+textarea {
+    resize: none;
+}
+
+#respuesta {
+    display: none;
+}
