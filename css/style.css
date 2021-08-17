@@ -88,7 +88,10 @@ footer {
 .contacto {
   background-color: #f0cf4e;
   display: grid;
-  grid-template-areas: "parrafo parrafo none" "medios medios form" "medios medios form" "medios medios form";
+  grid-template-areas: "parrafo parrafo none"
+ "medios medios form"
+ "medios medios form"
+ "medios medios form";
   grid-template-columns: 100px 1fr 1fr;
   grid-template-rows: auto; }
   .contacto .contacto_parrafo {
@@ -298,12 +301,20 @@ textarea {
           border-color: #343A40;
           padding: 5px;
           border-radius: 5px;
-          text-decoration: none; }
+          text-decoration: none;
+          margin: 5px;
+        }
+
+        .portfolio .portfolio_proyecto .card .card-body a i {
+          padding: 5px;
+        }
         .portfolio .portfolio_proyecto .card .card-body a:hover {
           background-color: #343A40;
           color: #f0cf4e;
           border-radius: 5px;
           border-color: #f0cf4e; }
+
+
 
 @media only screen and (max-width: 991px) {
   .redesSociales {
@@ -311,7 +322,10 @@ textarea {
   .navbar-nav {
     text-align: center; }
   .contacto {
-    grid-template-areas: "parrafo parrafo parrafo" "medios medios medios" "medios medios medios" "form form form";
+    grid-template-areas: "parrafo parrafo parrafo"
+ "medios medios medios"
+ "medios medios medios"
+ "form form form";
     grid-template-columns: repeat(3, 1fr); }
     .contacto .contacto_medios {
       flex-direction: row;
